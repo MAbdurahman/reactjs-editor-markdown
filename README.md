@@ -1,6 +1,6 @@
 # reactjs-editor-markdown
 
-## `this is a react-app and an exercise to get more familiarize with ReactJS`
+`this is a react-app and an exercise to get more familiarize with ReactJS`
 
 First install node_modules folder
 ## `npm install or yarn install`
