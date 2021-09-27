@@ -115,7 +115,7 @@ small,
 .app-logo {
 	height: 5vmin;
 	pointer-events: none;
-  animation: app-logo-spin infinite 20s linear;
+	animation: app-logo-spin infinite 20s linear;
 }
 
 /* .CodeMirror-line {
@@ -133,7 +133,7 @@ small,
 	left: 0;
 	top: 0;
 	right: 0;
-  z-index: 10000;
+	z-index: 10000;
 	width: 100vw;
 	min-height: 10vh;
 	min-width: 100vw;
@@ -141,8 +141,8 @@ small,
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-  flex-shrink: 0;
-  margin-bottom: 2em;
+	flex-shrink: 0;
+	margin-bottom: 2em;
 	text-align: center;
 	font-size: calc(6px + 1vmin);
 	color: white;
@@ -162,17 +162,19 @@ small,
 
 } */
 div.app-editor {
-  position: relative;
-  top: 110px;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+	position: relative;
+	top: 110px;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 .app-editor-textarea,
 .app-editor-markdown {
-  display: block;
+  width: 50%;
+	display: block;
+	scroll-behavior: auto;
 }
 
 /*=============================================

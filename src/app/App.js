@@ -34,7 +34,7 @@ export default function App() {
 						'guide',
 					],
 				});
-				simplemde.value('# This is Markdown!');
+				simplemde.value('');
 				setInstance(simplemde);
 				simplemde.codemirror.on('change', () => {
 					console.log(simplemde.value());
