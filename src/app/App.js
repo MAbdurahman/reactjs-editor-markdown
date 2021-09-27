@@ -34,24 +34,24 @@ export default function App() {
 						'guide',
 					],
 				});
-				simplemde.value('Initial text');
+				simplemde.value('# This is Markdown!');
 				setInstance(simplemde);
 				simplemde.codemirror.on('change', () => {
 					console.log(simplemde.value());
 					setValue(simplemde.value());
 				});
 			}
-		}, [textareaRef?.current]);
+		}, [textareaRef, instance]);
 
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<img src={Logo} className='App-logo' alt='logo' />
-				<h1>React Editor Markdown</h1>
+		<div className='app'>
+			<header className='app-header'>
+				<img src={Logo} className='app-logo' alt='logo' />
+				<h1>React Markdown Editor</h1>
 			</header>
-			<div className='editor'>
-				<textarea ref={textareaRef} />
-				<ReactMarkdown remarkPlugins={[remarkGfm]}>{value}</ReactMarkdown>
+			<div className='app-editor'>
+				<textarea className='app-editor-textarea' ref={textareaRef} />
+			<ReactMarkdown className='app-editor-markdown' remarkPlugins={[remarkGfm]}>{value}</ReactMarkdown>  
 			</div>
 		</div>
 	);
